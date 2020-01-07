@@ -16,17 +16,14 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Your Value Proposition
+            ## Which app conside a good app
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+            With million of apps around nowadays, mobile app analytics is a great way to understand the existing strategy to drive growth and retention of future user.
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
-
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
-
+            Use this app to see how we predict whether the overall rating for the app is more than 4 stars, which we think it a very good app.
             """
         ),
-        dcc.Link(dbc.Button('Your Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Try it', color='primary'), href='/predictions')
     ],
     md=4,
 )
@@ -37,7 +34,7 @@ fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size
 
 column2 = dbc.Col(
     [
-        dcc.Graph(figure=fig),
+        html.Img(src='assets/pic1.png', className='img-fluid')
     ]
 )
 

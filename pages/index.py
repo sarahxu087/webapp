@@ -14,18 +14,21 @@ from app import app
 column1 = dbc.Col(
     [
         dcc.Markdown(
+           "## Predict A Very Good App", style={"margin-bottom":"40px"}
+            
+        ),
+         dcc.Markdown(
+           
             """
-        
-            ## Which app conside a good app
-
             With million of apps around nowadays, mobile app analytics is a great way to understand the existing strategy to drive growth and retention of future user.
 
             Use this app to see how we predict whether the overall rating for the app is more than 4 stars, which we think it a very good app.
             """
         ),
-        dcc.Link(dbc.Button('Try it', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Try it', color='primary',style={"margin-top":"50px"}), href='/predictions')
     ],
     md=4,
+    style={"margin-top":"30px"}
 )
 
 gapminder = px.data.gapminder()
@@ -34,7 +37,7 @@ fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size
 
 column2 = dbc.Col(
     [
-        html.Img(src='assets/pic1.png', className='img-fluid ml-5')
+        html.Img(src='assets/pic1.png', style={"width":"603px","margin-top":"25px","margin-left":"100px"} )
         
     ]
 )

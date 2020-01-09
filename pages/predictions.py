@@ -19,7 +19,7 @@ column1 = dbc.Col(
         
             ## Predictions
 
-            If this app will be a very good app, means it will be more than 4 stars.
+            Use this app to see how we predict whether the overall rating for the app is more than 4 stars, which we think it a very good app.
 
             Content Rating:
             Rated 4+: Contains no objectionable material.

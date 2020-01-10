@@ -16,18 +16,18 @@ column1 = dbc.Col(
         dcc.Markdown( 
             """ 
 
-            This model was created to take a look into the apple app overall rating and to test a base predictive model.
+            This model was created to take a look into the Apple app overall rating and to test a base predictive model.
             However, we only predict whether the overall rating for the app is more than 4 stars.
 
-            ROC curve is displayed to the right.
-            ROC curve is created by plotting the true positive rate against the false positive rate at various threshod settings.It means 
+            The ROC curve is displayed to the right.
+            The ROC curve is created by plotting the true positive rating against the false positive rating at various threshod settings. It displays 
             how well a classifier ranks predicted probabilities.
 
 
-            Next one is Eli5 plot, It shows feature importance in predicting whether it is very good app. Feature rating_count_tot is more important than vpp_lic.
+            The next chart is the Eli5 plot. It shows the feature importance in predicting whether an app is "very good". The rating_count_tot feature is more important than vpp_lic.
 
 
-            The last one is SHAP Vaules plot. it is to explain why my prediction was different from the baseline.
+            The last graphic is the SHAP Vaules plot. It explains why my prediction was different from the baseline.
 
 
 

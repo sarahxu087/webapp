@@ -19,13 +19,13 @@ column1 = dbc.Col(
         
             ## Predictions
 
-            Use this app to see how we predict whether the overall rating for the app is more than 4 stars, which we think it a very good app.
+            Use this app to see how we predict whether the overall rating for a mobile app is more than 4 stars, which we consider to be a very good app.
 
             Content Rating:
-            Rated 4+: Contains no objectionable material.
-            Rated 9+: May contain content unsuitable for children under the age of 9.
-            ated 12+: May contain content unsuitable for children under the age of 12.
-            Rated17+: May contain content unsuitable for children under the age of 17.
+            * Rated 4+: Contains no objectionable material.
+            * Rated 9+: May contain content unsuitable for children under the age of 9.
+            * Rated 12+: May contain content unsuitable for children under the age of 12.
+            * Rated 17+: May contain content unsuitable for children under the age of 17.
 
             """
             
@@ -34,7 +34,8 @@ column1 = dbc.Col(
     ],
         
 
-    md=4,
+    md=8,
+    style={"padding-right":"10%"}
 )
 
 column2 = dbc.Col(
@@ -89,7 +90,7 @@ column2 = dbc.Col(
         html.H4('Expected App Rating',style={"margin-top":"20px"}),
         html.Div(id='prediction-content', style={"font-size":"20px","margin-top":"15px"}),
     ],
-    style={"margin-left":"370px"}
+    md=4
 )
 
 import pandas as pd

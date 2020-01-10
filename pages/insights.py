@@ -43,9 +43,9 @@ column1 = dbc.Col(
 column2 = dbc.Col(
     [
         
-        html.Div(html.Img(src='assets/ROC_curve.png', style={"width":"300px","margin":"auto","display":"block"} )),
+        html.Div(html.Img(src='assets/ROC_curve.png', style={"width":"400px","margin":"auto","display":"block"} )),
         html.Br(),
-        html.Div(html.Img(src='assets/weight.png',style={"width":"300px","margin":"auto","display":"block"} )),
+        html.Div(html.Img(src='assets/weight.png',style={"width":"400px","margin":"auto","display":"block"} )),
         html.Br(),
         html.Div(html.Img(src='assets/shap.png', className='img-fluid')),
     ]
